@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define STUDENT_ID_SEED 400442107u  /* CHANGE THIS */
+#define STUDENT_ID_SEED 400442107u
 #define RUNLENGTH 200000L
 #define WARMUP 10000L
 #define MAX_EVENTS 1000000
@@ -434,8 +434,6 @@ static void run_simulation(
     } else {
         printf(",nan\n");
     }
-
-    /* Remove packets left in the system before the next run. */
 
     for (s = 0; s < 3; s++) {
         for (q = 0; q < 2; q++) {
